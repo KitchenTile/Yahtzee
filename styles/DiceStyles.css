@@ -1,0 +1,14 @@
+.diceContainer {
+    display: flex;
+}
+
+.dice{
+    margin: 30px;
+
+}
+
+.dice h3{
+    border: 1px solid white;
+    padding: 40px;
+    border-radius: 10px;
+}
