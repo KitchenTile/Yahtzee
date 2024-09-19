@@ -1,16 +1,26 @@
-class player{
+class Player{
     constructor(name) {
-        this.player1 = name;
+        this.player = name;
         this.score = 0;
         this.diceRollCount = 0;
     }
 
     rollDice(dice) {
-        if (this.diceRollCount <= 3) {
-            dice.map(dice => {
-                dice.roll();
+        let diceValues = [];
+        if (this.diceRollCount <= 2) {
+            diceValues = dice.map(dice => {
+                return dice.roll();
             })
             this.diceRollCount++;
-        };
+            console.log(this.diceRollCount)
+        } else {
+            console.log("Turn Finished")
+        }
+
+        console.log(diceValues);
+
+        return diceValues;
     }
 }
+
+export default Player;

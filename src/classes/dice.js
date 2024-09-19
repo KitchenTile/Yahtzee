@@ -1,9 +1,14 @@
-class dice{
+class Dice{
     constructor() {
-        this.value = this.roll();
+        // this.value = this.roll();
+        this.selected = false;
     }
 
     roll() {
-        return Math.floor(Math.random() * 6) + 1;
+        const roll = Math.floor(Math.random() * 6) + 1;
+        // console.log(roll);
+        return roll;
     }
 }
+
+export default Dice;
