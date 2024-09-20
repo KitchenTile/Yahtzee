@@ -8,15 +8,21 @@ class Game {
     }
 
     startTurn() {
-        const currenetPlayer = this.players[this.playersTurn];
-        return currenetPlayer.rollDice(this.dice);
+        return this.players[this.playersTurn].rollDice(this.dice);
     };
 
     endTurn() {
+        this.players[this.playersTurn].diceRollCount = 0;
+        console.log("dice roll reset");
         if (this.playersTurn === 0) {
             this.playersTurn++;
-        } else {
-            this.playersTurn = 0;
+            console.log("current player: " + this.players[this.playersTurn].name);
+            console.log(this.playersTurn);
+
+        } else if (this.playersTurn === 1) {
+            this.playersTurn--;
+            console.log("current player: " + this.players[this.playersTurn].name);
+            console.log(this.playersTurn);
         }
     }
 }
