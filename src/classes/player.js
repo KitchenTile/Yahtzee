@@ -1,20 +1,18 @@
 class Player{
     constructor(name) {
-        this.player = name;
+        this.name = name;
         this.score = 0;
         this.diceRollCount = 0;
     }
 
     rollDice(dice) {
-        let diceValues = [];
-        if (this.diceRollCount <= 2) {
+        let diceValues = ["", "","", "", ""];
+        if (this.diceRollCount < 3) {
             diceValues = dice.map(dice => {
                 return dice.roll();
             })
             this.diceRollCount++;
-            console.log(this.diceRollCount)
-        } else {
-            console.log("Turn Finished")
+            console.log(`Rolls left: ${3 - this.diceRollCount}`)
         }
 
         console.log(diceValues);
