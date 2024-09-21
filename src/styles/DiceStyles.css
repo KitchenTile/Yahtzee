@@ -1,14 +1,30 @@
 .diceContainer {
     display: flex;
+    justify-content: center;
 }
 
 .dice{
     margin: 30px;
+}
 
+.dice.selected h3{
+    /* animation: glow 1s infinite; */
+    border: 1.5px solid #646cffaa;
+}
+
+.dice.selected h2{
+    /* animation: glow 1s infinite; */
+    color: #646cffaa;
 }
 
 .dice h3{
-    border: 1px solid white;
+    border: 1.5px solid white;
     padding: 40px;
     border-radius: 10px;
+    min-width: 95px;
+    min-height: 111px;
 }
+
+/* @keyframes glow {
+    50% {border-color: yellow;}
+} */

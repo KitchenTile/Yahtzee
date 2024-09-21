@@ -1,0 +1,26 @@
+.ScoreboardContainer {
+    display: grid;
+    grid-template: 1fr / 500px 500px;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.ScoreboardContainer h1{
+    font-size: 2.2em;
+}
+
+.SbList {
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 1fr;
+    gap: 5px;
+    list-style: none;
+    justify-items: start;
+    font-size: 1.2em;
+}
+
+.SbListItem {
+    border: 1px solid;
+    width: 100%;
+    word-spacing: 5px;
+}
+
