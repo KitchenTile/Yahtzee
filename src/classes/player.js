@@ -1,8 +1,20 @@
 class Player{
     constructor(name) {
         this.name = name;
-        this.score = 0;
         this.diceRollCount = 0;
+        this.scores = [
+            {key: "Aces: ", value: 0},
+            {key: "Twos: ",value: 0},
+            {key: "Threes: ", value: 0},
+            {key: "Fours: ", value: 0},
+            {key: "Fives: ", value: 0},
+            {key: "Sixes: ", value: 0},
+            {key: "Yahtzee: ", value: 0},
+            {key: "Full House: ", value: 0},
+            {key: "Three Of A Kind: ", value: 0},
+            {key: "Four Of A Kind: ", value: 0},
+            {key: "Straight: ", value: 0},
+        ]
     }
 
     rollDice(dice) {

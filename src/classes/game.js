@@ -19,7 +19,7 @@ class Game {
             console.log("current player: " + this.players[this.playersTurn].name);
             console.log(this.playersTurn);
 
-        } else if (this.playersTurn === 1) {
+        } else {
             this.playersTurn--;
             console.log("current player: " + this.players[this.playersTurn].name);
             console.log(this.playersTurn);
