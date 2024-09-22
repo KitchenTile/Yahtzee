@@ -9,7 +9,6 @@ function App() {
   const [game, setGame] = useState(new Game(new Player("Player1"), new Player("Player2"))); //Might need to set the game to a new state to avoid this reseting the players state
   const [diceValue, setDiceValue] = useState(["","","","",""]);
   const [player, setPlayer] = useState(`${game.players[game.playersTurn].name}`);
-  const [score, setScore] = useState(0);
 
 
   const rollValue = () => {
