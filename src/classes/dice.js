@@ -2,6 +2,7 @@ class Dice{
     constructor() {
         // this.value = this.roll();
         this.selected = false;
+        this.selectedValue = 0; 
     }
 
     roll() {
