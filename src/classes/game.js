@@ -5,6 +5,7 @@ class Game {
         this.players = [player1, player2];
         this.dice = [new Dice(), new Dice(), new Dice(), new Dice(), new Dice()];
         this.playersTurn = 0;
+        this.heldDice = [];
     }
 
     startTurn() {
