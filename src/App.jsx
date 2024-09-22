@@ -30,7 +30,7 @@ function App() {
         <h1>Yahtzee</h1>
         <Scoreboard game={game}/>
         <h1>{player}'s Turn</h1>
-        <DiceComponent dice={diceValue}/>
+        <DiceComponent dice={diceValue} game={game}/>
         {game.players[game.playersTurn].diceRollCount < 3 ? <button onClick={rollValue}> Roll Dice </button> : <button onClick={endTurn}> Finish Turn </button>}
       </div>
     </>
